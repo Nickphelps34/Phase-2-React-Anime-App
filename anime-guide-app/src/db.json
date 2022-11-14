@@ -1,4 +1,3 @@
-// Genres Horror, Adventure, Drama, Comedy// Genres Horror, Adventure, Drama, Comedy
 {
     "animes": [
     { 
@@ -39,7 +38,7 @@
         "genre": "Adventure",
         "numberOfSeasons" : "1",
         "numberOfEpisodes": "24",
-        "imbdRating": "7.3",
+        "imbdRating": "7.3/10",
         "description": "Amateur mage Shirou Emiya gets involved in a fight between mages using mythological heroes.",
         "personalUserRating":"7/10"
     },   
@@ -53,7 +52,7 @@
         "genre": "Action",
         "numberOfSeasons" : "21",
         "numberOfEpisodes": "500",
-        "imbdRating": "8.7",
+        "imbdRating": "8.7/10",
         "description": "Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.",
         "personalUserRating":""
     },   
@@ -67,7 +66,7 @@
         "genre": "Wit Studios",
         "numberOfSeasons" : "1",
         "numberOfEpisodes": "25",
-        "imbdRating": "9.0",
+        "imbdRating": "9.0/10",
         "Description": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
         "PersonalUserRating":""
     },   
@@ -81,7 +80,7 @@
         "genre": "Action",
         "numberOfSeasons" : "13",
         "numberOfEpisodes": "366",
-        "imbdRating": "8.2",
+        "imbdRating": "8.2/10",
         "description": "High school student Ichigo Kurosaki, who has the ability to see ghosts, gains soul reaper powers from Rukia Kuchiki and sets out to save the world from \"Hollows\".",
         "personalUserRating":""
     },   
@@ -95,7 +94,7 @@
         "genre": "Action",
         "numberOfSeasons" : "5",
         "numberOfEpisodes": "34",
-        "imbdRating": "7.9",
+        "imbdRating": "7.9/10",
         "description": "The year is 1614 AD. Two warring ninja clans, each supporting a son of Hidetada Tokugawa as the next shogun, send ten representatives each to fight to the death for the possession Tokugawa government for the winning clan for the next thousand years.",
         "personalUserRating":""
     },
@@ -110,7 +109,7 @@
         "bumberOfSeasons" : "1",
         "numberOfEpisodes": "13",
         "description": "Commonly known as the \"Dungeon\" city of Orario possesses a huge labyrinth in the underground. Its strange name attracts excitement, illusions of honor, and hopes of romance with a pretty girl. In this city of dreams and desires, new adventurer Bell Cranel has his fateful encounter with the tiny Goddess Hestia. Thus begins the story of a boy striving to become the best adventurer and a lonely goddess searching for followers both hoping to reach their goals and perhaps have some romance on the side.",
-        "imbdRating": "7.4",
+        "imbdRating": "7.4/10",
         "personalUserRating":""
     },  
     { 
@@ -124,7 +123,7 @@
         "numberOfSeasons" : "1",
         "numberOfEpisodes": "12",
         "description": "A minor god seeking to gain widespread worship teams up with a human girl he saved to gain fame, recognition and at least one shrine dedicated to him.",
-        "imbdRating": "7.9",
+        "imbdRating": "7.9/10",
         "personalUserRating":""
     }, 
     {
@@ -138,7 +137,7 @@
         "numberOfSeasons" : "6",
         "numberOfEpisodes": "148",
         "description": "Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks out his father, who left him when he was younger.",
-        "imbdRating": "9",
+        "imbdRating": "9.0/10",
         "personalUserRating":""
     },   
 
@@ -153,7 +152,7 @@
     "numberOfSeasons" : "2",
     "numberOfEpisodes": "37",
     "description": "After an intelligent yet cynical high school student begins to cleanse the world from evil with the help of a magical notebook that can kill anyone whose name is written on it.",
-    "imbdRating": "9",
+    "imbdRating": "9.0/10",
     "personalUserRating":""
     },  
     
@@ -168,7 +167,7 @@
       "numberOfSeasons" : "1",
       "numberOfEpisodes": "12",
       "description": "A Japanese businessman, captured by modern-day pirates, is written off and left for dead by his company. Tired of the corporate life, he opts to stick with the mercenaries that kidnapped him, becoming part of their gang.",
-      "imbdRating": "7.9",
+      "imbdRating": "7.9/10",
       "personalUserRating":""
     },
     { 
@@ -182,7 +181,7 @@
       "numberOfSeasons" : "1",
       "numberOfEpisodes": "25",
       "description": "Aladdin, Alibaba, and Morgiana go their separate ways after spending time together in Sindria to develop their own strengths, make new friends and prepare for what is coming.",
-      "imbdRating": "7.8",
+      "imbdRating": "7.8/10",
       "personalUserRating":""
     },  
     { 
@@ -196,7 +195,7 @@
       "numberOfSeasons" : "1",
       "numberOfEpisodes": "24",
       "description": "17-year-old Shinichi Izumi is partially infected by a Parasyte, monsters that butcher and consume humans. He must learn to co-exist with the creature if he is to survive both the life of a Parasyte and a human as part monster, part person.",
-      "imbdRating": "8.3",
+      "imbdRating": "8.3/10",
       "personalUserRating":""
     },       
     { 
@@ -210,7 +209,7 @@
       "NumberOfSeasons" : "2",
       "NumberOfEpisodes": "39",
       "Description": "Siblings Miyuki and Tatsuya Shiba are turning the National Magic University Affiliated First High School campus upside down.",
-      "imbdRating": "7.1",
+      "imbdRating": "7.1/10",
       "PersonalUserRating":""
     },
     { 
@@ -224,7 +223,7 @@
       "numberOfSeasons" : "1",
       "numberOfEpisodes": "12",
       "description": "A gate appears in modern-day Tokyo which allows access to a fantasy world. A Japanese military squad is formed to establish ties between both worlds.",
-      "imbdRating": "7.5",
+      "imbdRating": "7.5/10",
       "personalUserRating":""
     },
     { 
@@ -234,11 +233,11 @@
       "startDate": "July 8, 2012",
       "endDate": "December 23, 2012",
       "imageURL" : "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Sword_Art_Online_light_novel_volume_1_cover.jpg/220px-Sword_Art_Online_light_novel_volume_1_cover.jpg",
-      "genre": "action",
+      "genre": "Action",
       "numberOfSeasons" : "1",
       "numberOfEpisodes": "27",
       "description": "In the year 2022, thousands of people get trapped in a new virtual MMORPG and the lone wolf player, Kirito, works to escape.",
-      "imbdRating": "7.5",
+      "imbdRating": "7.5/10",
       "personalUserRating":""
     },   
     { 
@@ -252,7 +251,7 @@
       "numberOfSeasons" : "2",
       "numberOfEpisodes": "22",
       "description": "A powerful creature claims that within a year, Earth will be destroyed by him, but he offers mankind a chance by becoming a homeroom teacher where he teaches his students about how to kill him. An assassination classroom begins.",
-      "imbdRating": "8.0",
+      "imbdRating": "8.0/10",
       "personalUserRating":""
     }, 
     { 
@@ -276,7 +275,7 @@
       "startDate": "October 5, 2013October 5, 2013",
       "endDate": "PresentPresent",
       "imageURL" : "https://m.media-amazon.com/images/M/MV5BOGJhM2U4NTgtMWI0ZC00Njc5LWJmMjktMzQzMDgzZTIzMzI0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
-      "genre": "AdventureAdventure",
+      "genre": "Adventure",
       "numberOfSeasons" : "3",
       "numberOfEpisodes": "62",
       "description": "In the blink of an eye, thirty thousand bewildered Japanese gamers are whisked from their everyday lives into the world of the popular MMORPG, Elder Tale, after the game's latest update—unable to log out. Among them is the socially awkward college student Shiroe, whose confusion and shock lasts only a moment as, a veteran of the game, he immediately sets out to explore the limits of his new reality.",
