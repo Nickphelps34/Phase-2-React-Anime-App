@@ -8,12 +8,12 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=9000 react-scripts start",
-    "server": "json-server --watch db.json -p 9001"
+    "start": "PORT=8000 react-scripts start",
+    "server": "json-server --watch db.json -p 8001"
   },
   "eslintConfig": {
     "extends": [
