@@ -1,9 +1,10 @@
 import React from 'react';
 
-function AnimeContainer(props) {
+function AnimeContainer({thing}) {
+    
     return (
         <div>
-            
+           <h1>{thing}</h1> 
         </div>
     );
 }

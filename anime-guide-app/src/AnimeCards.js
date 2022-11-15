@@ -1,9 +1,9 @@
 import React from 'react';
 
-function AnimePage(props) {
+function AnimeCards(props) {
     return (
         <div>
-            
+           
         </div>
     );
 }
