@@ -1,15 +1,28 @@
 import React, {useState} from 'react';
-function AnimePage({anime}) {
-    const [toggle, setToggle] =useState(true)
-function handleToggle(e){
-    setToggle(!toggle)
+
+const CardFront = ({anime}) => {
+    return(
+        <div className="card-front">
+            <h2>{anime.title}</h2>
+            <img className="square-img"src={anime.imageURL} alt={anime.description}/>
+        </div>
+    )
 }
-    console.log(anime)
+
+const Details=({anime}) => <h2>{anime.genre}</h2>
+
+function AnimePage({anime}) {
+
+    const [showDetails, setShowDetails] = useState(true)
+const toggleDetails = () => {
+    setShowDetails(!showDetails)
+}
+
     return (
-        <div className="Anime-Card">
+        <div className="Anime-Card" onClick={toggleDetails}>
             <div className="card-front">
-                <h2>{anime.title}</h2>
-                <img className="square-img"src={anime.imageURL} alt={anime.description} onClick={handleToggle}/>
+                <h2>{anime.title.toUpperCase()}</h2>
+                <img className="square-img"src={anime.imageURL} alt={anime.description}/>
             </div>
             {/* <div className="card-back">
                 <ul>{anime.title}</ul>
