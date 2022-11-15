@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react"
-import Search from "./Search"
 import AnimeContainer from "./AnimeContainer"
 import NavBar from "./NavBar"
 import "./stylesheet.css"
+import Recommendation from "./Recommendations"
 
 const API = "http://localhost:8001/animes"
 function App() {
@@ -18,8 +18,7 @@ function App() {
   
   return (
     <div>
-      <NavBar/>
-      <Search/>
+      <NavBar />
       <AnimeContainer animeData={animeData}/>
     </div>
   );
