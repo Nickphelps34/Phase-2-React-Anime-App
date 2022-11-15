@@ -2,10 +2,8 @@ import React from 'react';
 import AnimeCards from "./AnimeCards"
 function AnimeContainer({animeData}) {
     return (
-        <div>
-            <h1>
+        <div className='anime-container'>
             {animeData.map(anime => <AnimeCards key={anime.id} anime={anime}/>)}
-            </h1>
         </div>
     );
 }

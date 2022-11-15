@@ -72,27 +72,32 @@
     transform: rotate(360deg);
   }
 }
+
 .Anime-Card {
   text-align: center;
   border: grey solid 1px;
   border-radius: 5px;
-  padding: 5rem 5rem;
-  width: 10%;
-  height: 10%;
-  display: inline-grid;
-  margin: 5px;
+  width: 250px;
+  height: 350px;
+  display: inline-flex;
+  margin: 10px;
   float: left;
   box-shadow: 3px 4px rgb(72, 54, 140);
   font-family:'Courier New', Courier, monospace;
   background-color: rgb(211,211,211);
   font-weight: normal;
   color: black;
-  font-size: small;
+  font-size: 10px;
   position: relative;
+}
+
+.anime-container {
+  margin: 100px;
 }
 
 .square-img {
   width:250px;
   height: 250px;
   display: inline-flex;
+  float: none;
 }

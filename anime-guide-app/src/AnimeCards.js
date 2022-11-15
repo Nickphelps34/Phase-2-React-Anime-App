@@ -8,6 +8,7 @@ function handleToggle(e){
     return (
         <div className="Anime-Card">
             <div className="card-front">
+                <h2>{anime.title}</h2>
                 <img className="square-img"src={anime.imageURL} alt={anime.description} onClick={handleToggle}/>
             </div>
             {/* <div className="card-back">
