@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 
-  
 
 const CardFront = ({anime}) => {
     return(
         <div className="flip-card-front">
+            <hr/>
             <h2 className="title-font">{anime.title.toUpperCase()}</h2>
+            <hr/>
             <img className="square-img"src={anime.imageURL} alt={anime.description}/>
         </div>
     )
@@ -14,11 +15,13 @@ const CardFront = ({anime}) => {
 const CardBack = ({anime}) => {
     return(
         <div className="flip-card-back">
-            <h2 className="title-font" >{anime.title.toUpperCase()}</h2>
-            <h2>{anime.genre}</h2>
+            <hr/>
+            <h2 className="title-font">{anime.title.toUpperCase()}</h2>
+            <hr/>
+            <h4>Genre: {anime.genre}</h4>
             <p>{anime.description}</p>
             <p>IMDB Rating : {anime.imbdRating}</p>
-            <button>Add Anime</button>
+            <button className="card-button">+ Add Anime</button>
         </div>
     )
 }
