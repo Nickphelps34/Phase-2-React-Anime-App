@@ -30,7 +30,7 @@
   }, 
   {
       "id": 3, 
-      "title": "fate/stay night", 
+      "title": "Fate/stay night", 
       "productionStudio": "CREi",
       "startDate": "January 30, 2004",
       "endDate": "Jung 17, 2006",
@@ -67,8 +67,8 @@
       "numberOfSeasons" : "1",
       "numberOfEpisodes": "25",
       "imbdRating": "9.0/10",
-      "Description": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-      "PersonalUserRating":""
+      "description": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+      "personalUserRating":""
   },   
   { 
       "id": 6, 
@@ -205,12 +205,12 @@
       "startDate": "October 12, 2008",
       "endDate": "March 21, 2011",
       "imageURL" : "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Irregular_at_Magic_High_School_LN_1.png/220px-Irregular_at_Magic_High_School_LN_1.png",
-      "Genre": "Adventure",
-      "NumberOfSeasons" : "2",
-      "NumberOfEpisodes": "39",
-      "Description": "Siblings Miyuki and Tatsuya Shiba are turning the National Magic University Affiliated First High School campus upside down.",
+      "genre": "Adventure",
+      "numberOfSeasons" : "2",
+      "numberOfEpisodes": "39",
+      "description": "Siblings Miyuki and Tatsuya Shiba are turning the National Magic University Affiliated First High School campus upside down.",
       "imbdRating": "7.1/10",
-      "PersonalUserRating":""
+      "personalUserRating":""
   },
   { 
       "id": 16, 

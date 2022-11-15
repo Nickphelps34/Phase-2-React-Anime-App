@@ -2,102 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-.App {
+.flip-card {
   text-align: center;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-link {
-  color: #61dafb;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.Anime-Card {
-  text-align: center;
-  border: grey solid 1px;
-  border-radius: 5px;
+  background-color: transparent;
   width: 250px;
   height: 350px;
   display: inline-flex;
   margin: 10px;
-  float: left;
-  box-shadow: 3px 4px rgb(72, 54, 140);
-  font-family:'Courier New', Courier, monospace;
-  background-color: rgb(211,211,211);
-  font-weight: normal;
-  color: black;
-  font-size: 10px;
-  position: relative;
+  perspective: 1000px;
+  justify-content: center;
 }
 
-.anime-container {
-  margin: 100px;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(0, 0, 0);
+  background-color: #bbb;
+  transform: rotateY(180deg);
 }
 
 .square-img {
   width:250px;
   height: 250px;
-  display: inline-flex;
-  float: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.title-font{
+  font-family: 'Ninja Naruto', sans-serif;
 }
