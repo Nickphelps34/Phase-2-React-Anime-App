@@ -1,12 +1,12 @@
 import React from 'react';
-
-function AnimeContainer({thing}) {
-    
+import AnimeCards from "./AnimeCards"
+function AnimeContainer({animeData}) {
     return (
         <div>
-           <h1>{thing}</h1> 
+            <h1>
+            {animeData.map(anime => <AnimeCards key={anime.id} anime={anime}/>)}
+            </h1>
         </div>
     );
 }
-
 export default AnimeContainer;
