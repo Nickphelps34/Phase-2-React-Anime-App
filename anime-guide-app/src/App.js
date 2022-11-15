@@ -12,7 +12,9 @@ function App() {
     .then(response => response.json())
     .then(data => setAnimeData(data))
   },[])
-  // const filteredData = animeData.filter((eachSeries) => eachSeries.name.toLowerCase().includes(search.toLowerCase()))
+  
+  const filteredData = animeData.filter((eachSeries) => console.log(eachSeries.genre))
+  
   return (
     <div>
       <Search/>

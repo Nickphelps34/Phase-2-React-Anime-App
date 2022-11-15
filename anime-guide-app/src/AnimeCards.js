@@ -8,7 +8,7 @@ function handleToggle(e){
     return (
         <div className="Anime-Card">
             <div className="Container">
-            <img className="Image"src={anime.imageURL} alt={anime.description} onClick={handleToggle}/>
+            <img className="original-img"src={anime.imageURL} alt={anime.description} onClick={handleToggle}/>
             <ul>{anime.title}</ul>
             <ul>Production Studio{anime.productionStudio}</ul>
             <ul>Series aired {anime.startDate} to {anime.endDate}</ul>
