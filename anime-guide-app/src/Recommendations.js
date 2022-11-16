@@ -6,7 +6,7 @@ function Recommendation(){
   return( 
   
   <div>
-    <h1>"Hello"</h1>
+    <h1>Welcome to the recommendations page!</h1>
   </div>
   )}
 

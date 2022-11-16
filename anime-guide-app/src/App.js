@@ -22,7 +22,17 @@ function App() {
   return (
     <div>
       <NavBar />
-      <AnimeContainer animeData={animeData}/>
+        <Switch>
+          <Route path="/recommendations">
+            <Recommendation/>
+          </Route>
+          <Route path="/myanimes">
+            <MyAnime/>
+          </Route>
+          <Route path="/">
+            <AnimeContainer animeData={animeData}/>
+          </Route>
+        </Switch>
     </div>
   );
 }

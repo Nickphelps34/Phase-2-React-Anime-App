@@ -2,7 +2,7 @@ import React from "react";
 
 function MyAnime(){
     return(
-        <h1>Howdy</h1>
+        <h1>Welcome to My Anime Page</h1>
     )
 }
 
