@@ -6,7 +6,6 @@ import "./stylesheet.css"
 import Recommendation from "./Recommendations"
 import MyAnime from "./MyAnime"
 
-
 const API = "http://localhost:8001/animes"
 
 function App() {
@@ -14,12 +13,13 @@ function App() {
   const [animeData, setAnimeData] = useState([])
   const [myFavs, setMyFavs] = useState([])
 
-
   useEffect(() =>{
     fetch(API)
     .then(response => response.json())
     .then(data => setAnimeData(data))
   },[])
+
+  const postAnime = (newAnime) => {setAnimeData([...animeData, newAnime])}
 
   return (
     <div>
@@ -29,7 +29,7 @@ function App() {
             <Recommendation animeData={animeData}/>
           </Route>
           <Route path="/myanimes">
-            <MyAnime myFavs={myFavs}/>
+            <MyAnime myFavs={myFavs} postAnime={postAnime}/>
           </Route>
           <Route exact path="/">
             <AnimeContainer setMyFavs={setMyFavs} myFavs={myFavs} animeData={animeData}/>
