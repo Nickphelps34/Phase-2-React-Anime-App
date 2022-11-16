@@ -8,6 +8,20 @@
   padding: 2rem 2rem;
 }
 
+.ulNav{
+  font-family: 'Ninja Naruto', sans-serif;
+  text-align: right;
+  list-style: none;
+  display: flex;
+}
+
+.nav ul{
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  font-family: 'Ninja Naruto', sans-serif;
+  text-align: center;
+}
 .nav li.active{
   background-color: #555;
   align-items: stretch;
@@ -16,15 +30,6 @@
 .nav li:hover{
   background-color: #777;
   align-items: stretch;
-}
-
-
-.nav ul{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
 }
 
 .nav a {
@@ -36,14 +41,25 @@
   padding: .25rem;
 }
 
+.home-title {
+  text-align: left;
+  font-family: 'Ninja Naruto', sans-serif;
+}
+
+.recommendation-title{
+  text-align: left;
+  font-family: 'Ninja Naruto', sans-serif;
+}
 
 .App {
   text-align: center;
 }
 
 .anime-container{
-  align-items: center;
-  justify-content: center;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
 }
 
 .card-button{
@@ -123,6 +139,12 @@
   left: 0;
 }
 
+.anime-form-title{
+  font-family: 'Ninja Naruto', sans-serif;
+  text-align: left;
+}
+
 .title-font{
   font-family: 'Ninja Naruto', sans-serif;
+  text-align: center;
 }

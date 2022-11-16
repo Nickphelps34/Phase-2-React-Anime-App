@@ -20,7 +20,7 @@ const options = [
         onchange modify a state that filters the animeData
       
       */}
-      <h1>Hello Friends</h1>
+      <h1 className="recommendation-title">Recommendations</h1>
       {/* 
       
         filtered data map

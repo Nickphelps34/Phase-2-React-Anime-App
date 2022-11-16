@@ -34,16 +34,15 @@ function MyAnime({myFavs,setMyFavs, postAnime}){
 
     return(
         <div>
+            <h1 className="anime-form-title">My Animes</h1>
             <form onSubmit = {handleSubmit}>
-                <div>
+                <div className="anime-form">
                     <input value={title} type="text" name="title" placeholder="Title" 
                     onChange = {(e) => setTitle(e.target.value)}/>
                     <input value={imageURL} type="text" name="imageURL" placeholder="Add Image URL"
                     onChange = {(e) => setImageURL(e.target.value)}/>
                     <input value={genre} type="text" name="genre" placeholder="Genre"
                     onChange = {(e) => setGenre(e.target.value)} />
-                    <input value={personalRating} type="number" name="rating" placeholder="Rating" step="1.00"
-                    onChange = {(e) => setPersonalRating(e.target.value)} />
                 </div>
                 <input className="" type="submit" value="addAnime" />
             </form>
