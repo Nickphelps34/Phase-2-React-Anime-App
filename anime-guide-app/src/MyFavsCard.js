@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState} from "react";
 
 const CardFront = ({anime}) => {
 
@@ -14,13 +14,20 @@ const CardFront = ({anime}) => {
 
 const CardBack = ({anime, setMyFavs, myFavs}) => {
 
-const[addAnime, setAddAnime] = useState(true)
+const [removeAnime, setRemoveAnime] = useState(false)
 
 const handleToggle = () => {
-    setAddAnime(!addAnime)
-    // adding current anime to fav list
+    setRemoveAnime(!removeAnime)
     setMyFavs([anime,...myFavs ])
 }
+
+const [rating, setRating] = useState('');
+
+const handleRating = (event) => {
+    setRating(event.target.value);
+}
+
+
 
     return(
         <div className="flip-card-back">
@@ -28,14 +35,14 @@ const handleToggle = () => {
             <h2 className="title-font">{anime.title.toUpperCase()}</h2>
             <hr/>
             <h4>Genre: {anime.genre}</h4>
-            <p>{anime.description}</p>
-            <p>IMDB Rating : {anime.imbdRating}</p>
-            <button onClick={handleToggle} className="card-button">{addAnime ? '+ Add to My Animes' : 'Anime Added' }</button>
+            <input type="number" 
+            <p>My Rating :  </p>
+            <button onClick={handleToggle} className="card-button">Remove From Favorites</button>
         </div>
     )
 }
 
-function AnimeCard({anime, setMyFavs, myFavs}) {
+function MyFavsCard({anime, setMyFavs, myFavs}) {
 
     return (
         <div className="flip-card">
@@ -46,7 +53,5 @@ function AnimeCard({anime, setMyFavs, myFavs}) {
         </div>
     );
 }
-export default AnimeCard;
 
-
-
+export default MyFavsCard

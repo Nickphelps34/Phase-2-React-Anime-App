@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import AnimeCards from "./AnimeCards";
+import MyFavsCard from "./MyFavsCard";
 
 function MyAnime({myFavs,setMyFavs, postAnime}){
 
@@ -49,7 +49,7 @@ function MyAnime({myFavs,setMyFavs, postAnime}){
             </form>
 
             <div className="myFavsCards">
-                {myFavs.map((anime) => <AnimeCards setMyFavs={setMyFavs} myFavs={myFavs} key={anime.id} anime={anime}/>)}
+                {myFavs.map((anime) => <MyFavsCard setMyFavs={setMyFavs} myFavs={myFavs} key={anime.id} anime={anime}/>)}
             </div>
         </div>
     )
