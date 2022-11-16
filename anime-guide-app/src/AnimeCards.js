@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-
 const CardFront = ({anime}) => {
+
     return(
         <div className="flip-card-front">
             <hr/>
@@ -13,6 +13,13 @@ const CardFront = ({anime}) => {
 }
 
 const CardBack = ({anime}) => {
+
+const[addAnime, setAddAnime] = useState(true)
+
+const handleToggle = () => {
+    setAddAnime(!addAnime)
+}
+
     return(
         <div className="flip-card-back">
             <hr/>
@@ -21,7 +28,7 @@ const CardBack = ({anime}) => {
             <h4>Genre: {anime.genre}</h4>
             <p>{anime.description}</p>
             <p>IMDB Rating : {anime.imbdRating}</p>
-            <button className="card-button">+ Add Anime</button>
+            <button onClick={handleToggle} className="card-button">{addAnime ? '+ Add Anime' : '- Remove Anime' }</button>
         </div>
     )
 }
