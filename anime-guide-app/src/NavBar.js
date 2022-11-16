@@ -1,15 +1,18 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 function NavBar (){
     return(
         <nav className="nav">
-            <a href="/" className="site-title"> Home </a>
             <ul>
                 <li>
-                    <a href="/recommendations">Recommendations</a>
+                    <NavLink exact to="/"> Home </NavLink>
                 </li>
                 <li>
-                    <a href="/myanimes">My Animes</a>
+                    <NavLink to="/recommendations">Recommendations</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/myanimes">My Animes</NavLink>
                 </li>
             </ul>
         </nav>

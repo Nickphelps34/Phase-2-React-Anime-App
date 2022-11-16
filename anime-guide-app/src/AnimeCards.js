@@ -12,12 +12,14 @@ const CardFront = ({anime}) => {
     )
 }
 
-const CardBack = ({anime}) => {
+const CardBack = ({anime,setMyFavs,myFavs}) => {
 
 const[addAnime, setAddAnime] = useState(true)
 
 const handleToggle = () => {
     setAddAnime(!addAnime)
+    // adding current anime to fav list
+    setMyFavs([anime,...myFavs ])
 }
 
     return(
@@ -33,13 +35,13 @@ const handleToggle = () => {
     )
 }
 
-function AnimeCard({anime}) {
+function AnimeCard({anime,setMyFavs, myFavs}) {
 
     return (
         <div className="flip-card">
             <div className="flip-card-inner">
                     <CardFront anime={anime}/>
-                    <CardBack anime={anime}/>
+                    <CardBack setMyFavs={setMyFavs} myFavs={myFavs} anime={anime}/>
             </div>
         </div>
     );

@@ -1,13 +1,24 @@
 import React from "react";
 
-// within here we need to have a randomizer button and possibly a drop down to sort by genre
-
-function Recommendation(){
+function Recommendation({animeData}){
+// state here
+  let filteredAnime = animeData.filter(anime=>anime.genre === "This value depends on the dropdown selected item")
+  console.log(filteredAnime)
   return( 
-  
-  <div>
-    <h1>Welcome to the recommendations page!</h1>
-  </div>
+    <div>
+      {/* 
+      
+      dropdown
+        onchange modify a state that filters the animeData
+      
+      */}
+      <h1>Hello Friends</h1>
+      {/* 
+      
+        filtered data map
+      
+      */}
+    </div>
   )}
 
 export default Recommendation

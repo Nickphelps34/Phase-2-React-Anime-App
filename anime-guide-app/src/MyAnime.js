@@ -1,8 +1,12 @@
 import React from "react";
+import AnimeCards from "./AnimeCards";
 
-function MyAnime(){
+function MyAnime({myFavs,setMyFavs}){
+
     return(
-        <h1>Welcome to My Anime Page</h1>
+        <div className="myFavsCards">
+            {myFavs.map((anime) => <AnimeCards setMyFavs={setMyFavs} myFavs={myFavs} key={anime.id} anime={anime}/>)}
+        </div>
     )
 }
 
