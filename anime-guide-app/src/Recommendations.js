@@ -18,7 +18,6 @@ function filteredAnimes(){
     return animeData.filter((anime)=>anime.genre === selectedGenre)
 }
 
-
   return( 
     <div>
       <div>

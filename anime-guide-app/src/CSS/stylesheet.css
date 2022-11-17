@@ -60,9 +60,15 @@ body{
   color: #333;
   border-width: 3px;
   border-radius: 15px;
+  background-color: ;
   border-color: #333;
   font-family: Gill Sans, sans-serif;
-  margin-top: 1rem;
+  margin: 1rem;
+}
+
+.genre-menu:hover{
+  background-color: #333;
+  color: white;
 }
 
 .home-title, .recommendation-title, .anime-form-title {
