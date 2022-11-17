@@ -6,7 +6,7 @@ function MyAnime({myFavs,setMyFavs, postAnime}){
     const [title, setTitle] = useState("")
     const [imageURL, setImageURL] = useState("")
     const [genre ,setGenre] = useState("")
-    // const [notes, setNotes] = useState("")
+    const [notes, setNotes] = useState("")
  
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -21,7 +21,7 @@ function MyAnime({myFavs,setMyFavs, postAnime}){
           numberOfEpisodes: "null",
           imbdRating: "null",
           description: "null",
-        //   notes: notes,
+          notes: notes,
           }
       fetch ("http://localhost:8001/myAnime",{
         method: 'POST',
@@ -45,8 +45,8 @@ function MyAnime({myFavs,setMyFavs, postAnime}){
                     onChange = {(e) => setImageURL(e.target.value)}/>
                     <input value={genre} type="text" name="genre" placeholder="Genre"
                     onChange = {(e) => setGenre(e.target.value)} />
-                    {/* <input value={notes} type="text" name="notes" placeholder="Personal Notes"
-                    onChange = {(e) => setNotes(e.target.value)} /> */}
+                    <input value={notes} type="text" name="notes" placeholder="Personal Notes"
+                    onChange = {(e) => setNotes(e.target.value)} />
                 </div>
                 <input className="card-button" type="submit" value="Add to Favorites"/>
             </form>

@@ -25,7 +25,7 @@ const CardBack = (anime) => {
             <h4>Genre: {anime.genre}</h4>
             <input type="number" min="1" max="10" name="rating" onChange={handleRating} value={rating}/>
             <p>My Rating : {rating}/10 </p>
-            <p>Personal Notes {anime.notes}</p>
+            <p>Personal Notes: {anime.notes}</p>
             <button>- Remove From Favorites</button>
         </div>
     )
