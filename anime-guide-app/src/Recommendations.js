@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import AnimeCard from "./AnimeCards";
+import RecommendationCards from "./RecommendationCards";
 
 
 function Recommendation({animeData}){
@@ -11,8 +11,9 @@ function changeFilter (event) {
 }
 
 function filteredAnimes(){
+
   if (selectedGenre === "")
-    return animeData.filter((anime)=>anime.genre === selectedGenre)
+    return animeData 
   else  
     return animeData.filter((anime)=>anime.genre === selectedGenre)
 }
@@ -20,25 +21,22 @@ function filteredAnimes(){
 
   return( 
     <div>
-      <h1 className='recommendation-title'>Recommendations</h1>
-    <div className='genre-container'>
-      <div className='genre-filter'>
-        <select name="filter" onChange={changeFilter}>
-          <option value="">Watch by Genre</option>
-          <option value="Action">Action</option>
-          <option value="Adventure">Adventure</option>
-          <option value="Comedy">Comedy</option>
-          <option value="Horror">Horror</option>
-        </select>
-       </div>
-       <div>
-        <h1>{selectedGenre}</h1>
-       </div>
-       <div className='anime-container'>
-        {filteredAnimes().map((anime)=>(
-          <AnimeCard key={anime.id} anime={anime}/>
-        ))}
-
+      <div>
+        <h1 className='recommendation-title'>Recommendations</h1>
+        <hr className='hr'/>
+      </div>
+        <div className='genre-container'>
+          <div className='genre-filter'>
+            <select name="filter" onChange={changeFilter} className="genre-menu">
+              <option value="">Discover by Genre</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Horror">Horror</option>
+            </select>
+           </div>
+        <div className='recommendations-container'>
+            { filteredAnimes().map((anime) => ( <RecommendationCards key={anime.id} anime={anime}/> ))}
        </div>
       </div>
    </div>
