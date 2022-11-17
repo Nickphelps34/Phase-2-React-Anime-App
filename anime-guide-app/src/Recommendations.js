@@ -26,6 +26,7 @@ function filteredAnimes(){
         <hr className='hr'/>
       </div>
         <div className='genre-container'>
+        <div className='recommendations-container'>
           <div className='genre-filter'>
             <select name="filter" onChange={changeFilter} className="genre-menu">
               <option value="">Discover by Genre</option>
@@ -35,7 +36,6 @@ function filteredAnimes(){
               <option value="Horror">Horror</option>
             </select>
            </div>
-        <div className='recommendations-container'>
             { filteredAnimes().map((anime) => ( <RecommendationCards key={anime.id} anime={anime}/> ))}
        </div>
       </div>
