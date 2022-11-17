@@ -6,9 +6,10 @@ import "./CSS/stylesheet.css"
 import Recommendation from "./Recommendations"
 import MyAnime from "./MyAnime"
 import "./CSS/Form.css"
+import MyFavsContainer from "./MyFavsContainer"
 
 const API = "http://localhost:8001/animes"
-
+const myAnimeAPI ="http://localhost:8001/myAnime"
 function App() {
 
   const [animeData, setAnimeData] = useState([])
@@ -20,7 +21,20 @@ function App() {
     .then(data => setAnimeData(data))
   },[])
 
-  const postAnime = (newAnime) => {setAnimeData([...animeData, newAnime])}
+  useEffect(()=>{
+    fetch(myAnimeAPI)
+    .then(response => response.json())
+    .then(myAnimeData => setMyFavs(myAnimeData))
+  },[])
+
+
+
+  const postAnime = (newAnime) => {setMyFavs([...myFavs, newAnime])}
+  // function removeFavorites(id){
+  //   const postedAnime = myAnimeData.filter(favAnime => (favAnime.id !== id))
+  //       setMyAnimeData(postedAnime)
+  // }
+
 
   return (
     <div className="whole-app">
@@ -31,9 +45,12 @@ function App() {
           </Route>
           <Route path="/myanimes">
             <MyAnime myFavs={myFavs} postAnime={postAnime}/>
+            <MyFavsContainer myFavs={myFavs}/>
           </Route>
           <Route exact path="/">
+            <>
             <AnimeContainer setMyFavs={setMyFavs} myFavs={myFavs} animeData={animeData}/>
+            </>
           </Route>
           <Route path="*">
             <h1>Are you lost????? 404 not found</h1>
