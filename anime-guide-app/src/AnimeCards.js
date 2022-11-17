@@ -4,9 +4,9 @@ const CardFront = ({anime}) => {
 
     return(
         <div className="flip-card-front">
-            <hr/>
+            {/* <hr/>
             <h2 className="title-font">{anime.title.toUpperCase()}</h2>
-            <hr/>
+            <hr/> */}
             <img className="square-img"src={anime.imageURL} alt={anime.description}/>
         </div>
     )
@@ -30,7 +30,7 @@ const handleToggle = () => {
             <h4>Genre: {anime.genre}</h4>
             <p>{anime.description}</p>
             <p>IMDB Rating : {anime.imbdRating}</p>
-            <button onClick={handleToggle} className="card-button">{addAnime ? '+ Add to My Animes' : 'Anime Added' }</button>
+            <button onClick={handleToggle} className="card-button">{addAnime ? '+ My Favorite Animes' : 'Anime Favorited' }</button>
         </div>
     )
 }

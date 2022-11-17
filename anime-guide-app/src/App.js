@@ -5,6 +5,7 @@ import NavBar from "./NavBar"
 import "./stylesheet.css"
 import Recommendation from "./Recommendations"
 import MyAnime from "./MyAnime"
+import "./Form.css"
 
 const API = "http://localhost:8001/animes"
 
@@ -22,7 +23,7 @@ function App() {
   const postAnime = (newAnime) => {setAnimeData([...animeData, newAnime])}
 
   return (
-    <div>
+    <div className="whole-app">
       <NavBar />
         <Switch>
           <Route path="/recommendations">

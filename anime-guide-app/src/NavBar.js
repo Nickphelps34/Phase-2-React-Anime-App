@@ -12,7 +12,7 @@ function NavBar (){
                     <NavLink to="/recommendations">Recommendations</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/myanimes">My Animes</NavLink>
+                    <NavLink to="/myanimes">My Favorite Animes</NavLink>
                 </li>
             </ul>
         </nav>
