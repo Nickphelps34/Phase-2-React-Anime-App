@@ -12,7 +12,7 @@ function changeFilter (event) {
 
 function filteredAnimes(){
 
-  if (selectedGenre === "")
+  if (selectedGenre === null )
     return animeData 
   else  
     return animeData.filter((anime)=>anime.genre === selectedGenre)
@@ -25,10 +25,11 @@ function filteredAnimes(){
         <hr className='hr'/>
       </div>
         <div className='genre-container'>
-        <div className='recommendations-container'>
+        <div className='recommendations-container'> 
+          <text>Choose your Adventure wisely!</text>
           <div className='genre-filter'>
             <select name="filter" onChange={changeFilter} className="genre-menu">
-              <option value="">Discover by Genre</option>
+              <option value="Choose Your Adventure"></option>
               <option value="Action">Action</option>
               <option value="Adventure">Adventure</option>
               <option value="Comedy">Comedy</option>
