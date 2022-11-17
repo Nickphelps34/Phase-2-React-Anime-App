@@ -8,19 +8,30 @@ import MyAnime from "./MyAnime"
 import "./Form.css"
 
 const API = "http://localhost:8001/animes"
-
+const myAnimeAPI ="http://localhost:8001/myAnime"
 function App() {
 
   const [animeData, setAnimeData] = useState([])
   const [myFavs, setMyFavs] = useState([])
-
+  // const [myAnimeData, setMyAnimeData] = useState([])
   useEffect(() =>{
     fetch(API)
     .then(response => response.json())
     .then(data => setAnimeData(data))
   },[])
 
-  const postAnime = (newAnime) => {setAnimeData([...animeData, newAnime])}
+  // useEffect(()=>{
+  //   fetch(myAnimeAPI)
+  //   .then(response => response.json())
+  //   .then(myAnimeData => setMyAnimeData(myAnimeData))
+  // },[])
+
+  const postAnime = (newAnime) => {setMyFavs([...myFavs, newAnime])}
+  // function removeFavorites(id){
+  //   const postedAnime = myAnimeData.filter(favAnime => (favAnime.id !== id))
+  //       setMyAnimeData(postedAnime)
+  // }
+
 
   return (
     <div className="whole-app">

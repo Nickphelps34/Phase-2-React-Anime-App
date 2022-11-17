@@ -1037,6 +1037,34 @@
       "description": "null",
       "personalRating": "",
       "id": 54
+    },
+    {
+      "title": "Matt",
+      "productionStudio": "null",
+      "startDate": "null",
+      "endDate": "null",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Dragon_Ball_Z_Logo.png/220px-Dragon_Ball_Z_Logo.png",
+      "genre": "Action",
+      "numberOfSeasons": "null",
+      "numberOfEpisodes": "null",
+      "imbdRating": "null",
+      "description": "null",
+      "personalRating": "",
+      "id": 55
+    },
+    {
+      "title": "Dragon Ball",
+      "productionStudio": "null",
+      "startDate": "null",
+      "endDate": "null",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Dragon_Ball_Z_Logo.png/220px-Dragon_Ball_Z_Logo.png",
+      "genre": "10",
+      "numberOfSeasons": "null",
+      "numberOfEpisodes": "null",
+      "imbdRating": "null",
+      "description": "null",
+      "personalRating": "",
+      "id": 56
     }
   ]
 }
