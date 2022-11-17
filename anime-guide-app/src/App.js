@@ -30,10 +30,11 @@ function App() {
 
 
   const postAnime = (newAnime) => {setMyFavs([...myFavs, newAnime])}
-  // function removeFavorites(id){
-  //   const postedAnime = myAnimeData.filter(favAnime => (favAnime.id !== id))
-  //       setMyAnimeData(postedAnime)
-  // }
+  
+  function removeFavorites(id){
+    const removePostedAnime = myFavs.filter(myAnime=> (myAnime.id !== id))
+        setMyFavs(removePostedAnime)
+  }
 
 
   return (
@@ -45,7 +46,7 @@ function App() {
           </Route>
           <Route path="/myanimes">
             <MyAnime myFavs={myFavs} postAnime={postAnime}/>
-            <MyFavsContainer myFavs={myFavs}/>
+            <MyFavsContainer myFavs={myFavs} removeFavorites={removeFavorites}/>
           </Route>
           <Route exact path="/">
             <>

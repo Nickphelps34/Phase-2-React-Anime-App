@@ -1,10 +1,10 @@
 import React from 'react';
 import MyFavsCard from './MyFavsCard';
 
-function MyFavsContainer({myFavs}) {
+function MyFavsContainer({myFavs, removeFavorites}) {
     return (
         <div>
-            {myFavs.map(myAnime =><MyFavsCard key={myAnime.id} myAnime={myAnime}/>)}
+            {myFavs.map(myAnime =><MyFavsCard key={myAnime.id} myAnime={myAnime} removeFavorites={removeFavorites}/>)}
         </div>
     );
 }
