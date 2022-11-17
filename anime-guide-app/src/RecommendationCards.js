@@ -14,14 +14,14 @@ const CardBack = ({anime}) => {
 
     const totalEpisodes = anime.numberOfEpisodes
     
-    let levelOfCommitment
-        if (totalEpisodes <= 12){
-            levelOfCommitment = 'Low'
-        }else if (totalEpisodes >= 13 && totalEpisodes <= 100){
-            levelOfCommitment =  'Medium'
-        }else if(totalEpisodes > 101){
-            levelOfCommitment =  'High'
-        }
+        let levelOfCommitment
+            if (totalEpisodes <= 12){
+                levelOfCommitment = 'Low'
+            }else if (totalEpisodes >= 13 && totalEpisodes <= 100){
+                levelOfCommitment =  'Medium'
+            }else if(totalEpisodes > 101){
+                levelOfCommitment =  'High'
+            }
 
     return(
         <div className="flip-card-back">
@@ -33,6 +33,7 @@ const CardBack = ({anime}) => {
             <div>
                 <h3 className="title-font">{levelOfCommitment}</h3>
                 <p>{totalEpisodes} Episodes</p>
+                <p>IMDB Rating : {anime.imbdRating}</p>
             </div>
         </div>
     )

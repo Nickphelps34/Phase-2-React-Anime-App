@@ -3,9 +3,6 @@ import React, { useState } from "react";
 const CardFront = (anime) => {
     return (
         <div className="flip-card-front">
-            <hr />
-            <h2 className="title-font">{anime.title.toUpperCase()}</h2>
-            <hr />
             <img className="square-img" src={anime.imageURL} alt={anime.description} />
         </div>
     )
@@ -18,6 +15,8 @@ const CardBack = (anime) => {
             <h2 className="title-font">{anime.title.toUpperCase()}</h2>
             <hr />
             <h4>Genre: {anime.genre}</h4>
+            
+            <button>- Remove From Favorites</button>
         </div>
     )
 }

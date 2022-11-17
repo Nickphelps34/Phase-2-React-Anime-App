@@ -19,14 +19,18 @@ const handleToggle = () => {
     setMyFavs([anime,...myFavs ])
 }
 
+// "endDate": "December 23, 2008",
+
     return(
         <div className="flip-card-back">
             <hr/>
             <h2 className="title-font">{anime.title.toUpperCase()}</h2>
             <hr/>
-            <h4>Genre: {anime.genre}</h4>
-            <p>{anime.description}</p>
-            <p>IMDB Rating : {anime.imbdRating}</p>
+            <div className="card-font">
+                <p>Production Studio: {anime.productionStudio}</p>
+                <p>Show Start Date: {anime.startDate}</p>
+                <p>Show End Date: {anime.endDate}</p>
+            </div>
             <button onClick={handleToggle} className="card-button">{addAnime ? '+ My Favorite Animes' : 'Anime Favorited' }</button>
         </div>
     )
