@@ -1,3 +1,6 @@
+body{
+  margin:0;
+}
 .nav{
   background-color: #333;
   color: white;
@@ -7,14 +10,12 @@
   gap: 2rem;
   padding: 2rem 2rem;
 }
-
 .ulNav{
   font-family: 'Ninja Naruto', sans-serif;
   text-align: right;
   list-style: none;
   display: flex;
 }
-
 .nav ul{
   padding: 0;
   margin: 0;
@@ -26,12 +27,10 @@
   background-color: #555;
   align-items: stretch;
 }
-
 .nav li:hover{
   background-color: #777;
   align-items: stretch;
 }
-
 .nav a {
   color: inherit;
   text-decoration: none;
@@ -40,21 +39,58 @@
   align-items: center;
   padding: .25rem;
 }
-
-.home-title, .recommendation-title, .anime-form-title {
-  text-align: left;
-  font-family: 'Ninja Naruto', sans-serif;
-  padding: 25px;
+.hr{
+  color: #333;
+  height: 5px;
+  border-width: 0px;
+  background-color: #333;
+  margin: 0;
+}
+.home-page{
+  justify-content: center;
+  text-align: center;
+}
+.genre-container{
+  justify-content: center;
+  text-align: center;
 }
 
+.genre-menu{
+  font-size: 25px;
+  color: #333;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color: #333;
+  font-family: Gill Sans, sans-serif;
+  margin-top: 1rem;
+}
+
+.home-title, .recommendation-title, .anime-form-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Ninja Naruto', sans-serif;
+  padding: 10px;
+  color:   #333;
+}
 
 .App {
   text-align: center;
 }
 
 .anime-container{
+  background-image: linear-gradient(180deg, red, yellow);
+  background-repeat: none;
   align-content: center;
-  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+
+.recommendations-container{
+  background-image: linear-gradient(180deg, red, yellow);
+  background-repeat: none;
+  align-content: center;
+  min-height: 100vh;
   width: 100%;
   padding: 10px;
 }
@@ -68,6 +104,7 @@
   margin: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .card-button:hover{
   background-color: #333;
   color: white;
@@ -94,7 +131,6 @@
   transform-style: preserve-3d;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
-  /* backface-visibility: hidden; */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -134,8 +170,13 @@
   left: 0;
 }
 
-
 .title-font{
   font-family: 'Ninja Naruto', sans-serif;
   text-align: center;
+}
+
+.selected-genre{
+  font-family: 'Ninja Naruto', sans-serif;
+  text-align: left;
+  font-size: 25px;
 }

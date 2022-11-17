@@ -4,9 +4,6 @@ const CardFront = ({anime}) => {
 
     return(
         <div className="flip-card-front">
-            {/* <hr/>
-            <h2 className="title-font">{anime.title.toUpperCase()}</h2>
-            <hr/> */}
             <img className="square-img"src={anime.imageURL} alt={anime.description}/>
         </div>
     )
