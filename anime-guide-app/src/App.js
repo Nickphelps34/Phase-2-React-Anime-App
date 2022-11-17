@@ -6,6 +6,7 @@ import "./stylesheet.css"
 import Recommendation from "./Recommendations"
 import MyAnime from "./MyAnime"
 import "./Form.css"
+import MyFavsContainer from "./MyFavsContainer"
 
 const API = "http://localhost:8001/animes"
 const myAnimeAPI ="http://localhost:8001/myAnime"
@@ -13,18 +14,20 @@ function App() {
 
   const [animeData, setAnimeData] = useState([])
   const [myFavs, setMyFavs] = useState([])
-  // const [myAnimeData, setMyAnimeData] = useState([])
+
   useEffect(() =>{
     fetch(API)
     .then(response => response.json())
     .then(data => setAnimeData(data))
   },[])
 
-  // useEffect(()=>{
-  //   fetch(myAnimeAPI)
-  //   .then(response => response.json())
-  //   .then(myAnimeData => setMyAnimeData(myAnimeData))
-  // },[])
+  useEffect(()=>{
+    fetch(myAnimeAPI)
+    .then(response => response.json())
+    .then(myAnimeData => setMyFavs(myAnimeData))
+  },[])
+
+
 
   const postAnime = (newAnime) => {setMyFavs([...myFavs, newAnime])}
   // function removeFavorites(id){
@@ -42,9 +45,12 @@ function App() {
           </Route>
           <Route path="/myanimes">
             <MyAnime myFavs={myFavs} postAnime={postAnime}/>
+            <MyFavsContainer myFavs={myFavs}/>
           </Route>
           <Route exact path="/">
+            <>
             <AnimeContainer setMyFavs={setMyFavs} myFavs={myFavs} animeData={animeData}/>
+            </>
           </Route>
           <Route path="*">
             <h1>Are you lost????? 404 not found</h1>
