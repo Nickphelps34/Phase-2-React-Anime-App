@@ -36,20 +36,22 @@ function MyAnime({myFavs,setMyFavs, postAnime}){
         <div>
             <h1 className="anime-form-title">My Favorite Animes</h1>
             <hr className='hr'/>
-            <div className="full-form">
-            <form className='form-format' onSubmit = {handleSubmit}>
-                <div className="form-box">
-                    <input value={title} type="text" name="title" placeholder="Title" 
-                    onChange = {(e) => setTitle(e.target.value)}/>
-                    <input value={imageURL} type="text" name="imageURL" placeholder="Add Image URL"
-                    onChange = {(e) => setImageURL(e.target.value)}/>
-                    <input value={genre} type="text" name="genre" placeholder="Genre"
-                    onChange = {(e) => setGenre(e.target.value)} />
-                    <input value={notes} type="text" name="notes" placeholder="Personal Notes"
-                    onChange = {(e) => setNotes(e.target.value)} />
-                </div>
-                <input className="card-button" type="submit" value="Add to Favorites"/>
-            </form>
+            <div className="fav-animes-page">
+                <div className="full-form">
+                    <form className='form-format' onSubmit = {handleSubmit}>
+                    <div className="form-box">
+                        <input value={title} type="text" name="title" placeholder="Title" 
+                        onChange = {(e) => setTitle(e.target.value)}/>
+                        <input value={imageURL} type="text" name="imageURL" placeholder="Add Image URL"
+                        onChange = {(e) => setImageURL(e.target.value)}/>
+                        <input value={genre} type="text" name="genre" placeholder="Genre"
+                        onChange = {(e) => setGenre(e.target.value)} />
+                        <input value={notes} type="text" name="notes" placeholder="Personal Notes"
+                        onChange = {(e) => setNotes(e.target.value)} />
+                    </div>
+                    <input className="card-button" type="submit" value="Add to Favorites"/>
+                </form>
+            </div>
             </div>
 
             <div className="myFavsCards">

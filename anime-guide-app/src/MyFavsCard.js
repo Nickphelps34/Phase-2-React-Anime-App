@@ -9,10 +9,19 @@ const CardFront = (anime) => {
 }
 
 const CardBack = (anime, removeFavorites) => {
+    
+    const [rating, setRating] = useState('');
+
+    const handleRating = (event) => {
+    setRating(event.target.value);
+    }
+
     const API = "http://localhost:8001/myAnime"
     const headers = {
-        Accepts: "application/json",
-              "Content-Type" : "application/json"}
+
+        Accepts: "application/json", 
+        "Content-Type" : "application/json"}
+
     function handleDelete(id){
         removeFavorites(id)
         fetch(`${API}/${id}`,{
@@ -22,13 +31,17 @@ const CardBack = (anime, removeFavorites) => {
 
     }
 
+
     return (
         <div className="flip-card-back">
             <hr />
             <h2 className="title-font">{anime.title.toUpperCase()}</h2>
             <hr />
+            <input type="number" min="1" max="10" name="rating" onChange={handleRating} value={rating}/>
+            <p>My Rating : {rating}/10 </p>
+            <p>Personal Notes: {anime.notes}</p>
             <h4>Genre: {anime.genre}</h4>
-            
+
             <button onClick={()=>handleDelete(anime.id)}>- Remove From Favorites</button>
         </div>
     )
