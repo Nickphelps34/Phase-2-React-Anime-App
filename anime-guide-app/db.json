@@ -281,5 +281,20 @@
       "personalUserRating": ""
     }
   ],
-  "myAnime": []
+  "myAnime": [
+    {
+      "title": "Full Metal Alchemist",
+      "productionStudio": "null",
+      "startDate": "null",
+      "endDate": "null",
+      "imageURL": "https://m.media-amazon.com/images/M/MV5BMmI5NmFlZjItOTBhOC00NGI0LWIyNDAtODJhOTJjZDEyMTYyXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+      "genre": "Adventure",
+      "numberOfSeasons": "null",
+      "numberOfEpisodes": "null",
+      "imbdRating": "null",
+      "description": "null",
+      "notes": "This Show is Incredible. I really, Really Love it",
+      "id": 1
+    }
+  ]
 }
