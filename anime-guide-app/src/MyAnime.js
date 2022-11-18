@@ -43,7 +43,6 @@ function MyAnime({ myFavs, setMyFavs, postAnime, removeFavorites }) {
         <div>
             <h1 className="anime-form-title">My Favorite Animes</h1>
             <hr className='hr' />
-            <div className="full-form">
                 <div className="fav-animes-page">
                     <form className='form-format' onSubmit={handleSubmit}>
                         <div className="form-box">
@@ -55,13 +54,11 @@ function MyAnime({ myFavs, setMyFavs, postAnime, removeFavorites }) {
                                 onChange={(e) => setGenre(e.target.value)} />
                             <input value={notes} type="text" name="notes" placeholder="Personal Notes"
                                 onChange={(e) => setNotes(e.target.value)} />
+                            <input className="card-button" type="submit" value="Add to Favorites" />
                         </div>
-                        <input className="card-button" type="submit" value="Add to Favorites" />
                     </form>
                     {myFavs.map((myAnime, i) => <MyFavsCard key={i} myAnime={myAnime} removeFavorites={removeFavorites} />)}
                 </div>
-            </div>
-
         </div>
     )
 }
