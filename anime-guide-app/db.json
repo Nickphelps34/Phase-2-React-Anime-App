@@ -108,7 +108,7 @@
       "genre": "Action",
       "bumberOfSeasons": "1",
       "numberOfEpisodes": "13",
-      "description": "Commonly known as the \"Dungeon\" city of Orario possesses a huge labyrinth in the underground. Its strange name attracts excitement, illusions of honor, and hopes of romance with a pretty girl. In this city of dreams and desires, new adventurer Bell Cranel has his fateful encounter with the tiny Goddess Hestia.",
+      "description": "In the city of Orario is an underground labyrinth. Its strange name attracts excitement, illusions of honor, and hopes of romance with a pretty girl. Adventurer Bell Cranel has his fateful encounter with the Goddess Hestia.",
       "imbdRating": "7.4/10",
       "personalUserRating": ""
     },
@@ -281,20 +281,5 @@
       "personalUserRating": ""
     }
   ],
-  "myAnime": [
-    {
-      "title": "Hello",
-      "productionStudio": "null",
-      "startDate": "null",
-      "endDate": "null",
-      "imageURL": "https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536849__340.png",
-      "genre": "Adventure",
-      "numberOfSeasons": "null",
-      "numberOfEpisodes": "null",
-      "imbdRating": "null",
-      "description": "null",
-      "notes": "asdfasdf",
-      "id": 5
-    }
-  ]
+  "myAnime": []
 }
