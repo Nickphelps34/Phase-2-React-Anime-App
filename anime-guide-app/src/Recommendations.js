@@ -5,11 +5,16 @@ import RecommendationCards from "./RecommendationCards";
 function Recommendation({animeData}){
 
 const [selectedGenre, setSelectedGenre] = useState("")
+const [showText, setShowText] = useState(true)
 
 function changeFilter (event) {
     setSelectedGenre(event.target.value)
+    toggleText()
 }
 
+const toggleText = () => {
+  setShowText(!showText)
+}
 function filteredAnimes(){
 
   if (selectedGenre === null ){
@@ -29,7 +34,7 @@ function filteredAnimes(){
         <div className='recommendations-container'> 
         <text className="title-font">{filteredAnimes}</text>
           <div className='genre-filter'>
-            <select name="filter" onChange={changeFilter}className="genre-menu">
+            <select name="filter" onChange={changeFilter} className="genre-menu">
               <option value="Genre">Genre</option>
               <option value="Action">Action</option>
               <option value="Adventure">Adventure</option>
@@ -38,7 +43,7 @@ function filteredAnimes(){
             </select>
            </div>
             { filteredAnimes().map((anime) => ( <RecommendationCards key={anime.id} anime={anime}/> ))}
-            <h1 className="adventure-text">Your Adventure Awaits...</h1>
+            {showText === true ? <h1 className="adventure-text">Your Adventure Awaits...</h1> : null}
        </div>
       </div>
    </div>
