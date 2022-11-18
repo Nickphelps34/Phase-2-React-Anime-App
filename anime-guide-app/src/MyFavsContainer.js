@@ -3,8 +3,10 @@ import MyFavsCard from './MyFavsCard';
 
 function MyFavsContainer({myFavs, removeFavorites}) {
     return (
-        <div>
-            {myFavs.map(myAnime =><MyFavsCard key={myAnime.id} myAnime={myAnime} removeFavorites={removeFavorites}/>)}
+        <div className="fav-animes-page">
+            <div>
+                {myFavs.map(myAnime =><MyFavsCard key={myAnime.id} myAnime={myAnime} removeFavorites={removeFavorites}/>)}
+            </div>
         </div>
     );
 }

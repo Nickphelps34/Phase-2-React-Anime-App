@@ -50,7 +50,7 @@ const CardBack = (anime, removeFavorites) => {
 
 function MyFavsCard({ myAnime, removeFavorites }) {
     return (
-        myAnime === undefined ?  null :
+        myAnime === undefined ?  "" :
             <div className="flip-card">
                 <div className="flip-card-inner">
                     {CardFront(myAnime)}

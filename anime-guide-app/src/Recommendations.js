@@ -38,6 +38,7 @@ function filteredAnimes(){
             </select>
            </div>
             { filteredAnimes().map((anime) => ( <RecommendationCards key={anime.id} anime={anime}/> ))}
+            <h1 className="adventure-text">Your Adventure Awaits...</h1>
        </div>
       </div>
    </div>
