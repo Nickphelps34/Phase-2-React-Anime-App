@@ -6,7 +6,6 @@ import "./CSS/stylesheet.css"
 import Recommendation from "./Recommendations"
 import MyAnime from "./MyAnime"
 import "./CSS/Form.css"
-import MyFavsContainer from "./MyFavsContainer"
 
 const API = "http://localhost:8001/animes"
 const myAnimeAPI ="http://localhost:8001/myAnime"
@@ -27,15 +26,12 @@ function App() {
     .then(myAnimeData => setMyFavs(myAnimeData))
   },[])
 
-
-
   const postAnime = (newAnime) => {setMyFavs([...myFavs, newAnime])}
   
   function removeFavorites(id){
     const removePostedAnime = myFavs.filter(myAnime=> (myAnime.id !== id))
         setMyFavs(removePostedAnime)
   }
-
 
   return (
     <div className="whole-app">
@@ -45,8 +41,7 @@ function App() {
             <Recommendation animeData={animeData}/>
           </Route>
           <Route path="/myanimes">
-            <MyAnime myFavs={myFavs} postAnime={postAnime}/>
-            <MyFavsContainer myFavs={myFavs} removeFavorites={removeFavorites}/>
+            <MyAnime myFavs={myFavs} postAnime={postAnime} removeFavorites={removeFavorites}/>
           </Route>
           <Route exact path="/">
             <>

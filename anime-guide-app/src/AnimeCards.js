@@ -15,11 +15,8 @@ const[addAnime, setAddAnime] = useState(true)
 
 const handleToggle = () => {
     setAddAnime(!addAnime)
-    // adding current anime to fav list
     setMyFavs([anime,...myFavs ])
 }
-
-// "endDate": "December 23, 2008",
 
     return(
         <div className="flip-card-back">

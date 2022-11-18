@@ -9,12 +9,13 @@ const [showText, setShowText] = useState(true)
 
 function changeFilter (event) {
     setSelectedGenre(event.target.value)
-    toggleText()
+    if (event.target.value === 'Genre'){
+      setShowText(true)
+    }else{
+      setShowText(false)
+    }
 }
 
-const toggleText = () => {
-  setShowText(!showText)
-}
 function filteredAnimes(){
 
   if (selectedGenre === null ){
