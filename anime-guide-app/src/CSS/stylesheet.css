@@ -41,7 +41,9 @@ body{
   border-width: 0px;
   background-color: #333;
   margin: 0;
+  min-width: 100%;
 }
+
 .home-page{
   justify-content: center;
   text-align: center;
